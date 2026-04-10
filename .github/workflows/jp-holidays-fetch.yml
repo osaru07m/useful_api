@@ -1,0 +1,84 @@
+name: jp-holidays-fetch
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup GitHub CLI
+        run: |
+          type -p gh || sudo apt install gh -y
+
+      - name: Download CSV
+        run: curl -o tmp_holidays_jis.csv https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv
+
+      - name: Convert encoding
+        run: iconv -f SHIFT-JIS -t UTF-8 tmp_holidays_jis.csv -o tmp_holidays.csv
+
+      - name: Convert CSV to JSON
+        run: |
+          awk -F',' 'NR>1 {
+            gsub("/", "-", $1);
+            printf("{\"date\":\"%s\",\"name\":\"%s\"},\n", $1, $2);
+          }' tmp_holidays.csv > body.json
+
+          echo "[" > tmp_holidays.json
+          sed '$ s/,$//' body.json >> tmp_holidays.json
+          echo "]" >> tmp_holidays.json
+
+      - name: Check diff
+        run: |
+          if [ ! -f holidays.json ]; then
+            mv tmp_holidays.json holidays.json
+            echo "diff=true" >> $GITHUB_ENV
+          elif ! diff -q tmp_holidays.json holidays.json > /dev/null; then
+            mv tmp_holidays.json holidays.json
+            echo "diff=true" >> $GITHUB_ENV
+          else
+            echo "diff=false" >> $GITHUB_ENV
+          fi
+
+      - name: Debug diff
+        run: echo "diff=${{ env.diff }}"
+
+      - name: Create PR
+        if: env.diff == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+
+          BRANCH_NAME="jp-holidays/json-update"
+
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          git checkout -B $BRANCH_NAME
+          git add holidays.json
+          git commit -m "feat(jp-holidays): Update JSON file" || echo "No changes"
+          git push origin $BRANCH_NAME --force
+
+          if gh pr list --head $BRANCH_NAME --state open | grep -q .; then
+            echo "PR already exists"
+          else
+            gh pr create \
+              --title "[jp-holidays] JSON更新" \
+              --body "祝日データに差分があったため更新" \
+              --base main \
+              --head $BRANCH_NAME
+          fi
+
+      - name: Skip log
+        if: env.diff == 'false'
+        run: echo "No changes detected. Skipping PR."
