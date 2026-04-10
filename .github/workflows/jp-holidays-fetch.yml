@@ -31,7 +31,7 @@ jobs:
           awk -F',' 'NR>1 {
             gsub("/", "-", $1);
             printf("{\"date\":\"%s\",\"name\":\"%s\"},\n", $1, $2);
-          }' tmp_holidays.csv > body.json
+          }' tmp_holidays.csv | tr -d '\r' > body.json
 
           echo "[" > tmp_holidays.json
           sed '$ s/,$//' body.json >> tmp_holidays.json
