@@ -1,0 +1,250 @@
+name,name_ja,alpha2,alpha3,numeric,subdivision
+Afghanistan,アフガニスタン・イスラム共和国,af,afg,004,ISO 3166-2:AF
+Albania,アルバニア共和国,al,alb,008,ISO 3166-2:AL
+Antarctica,南極,aq,ata,010,ISO 3166-2:AQ
+Algeria,アルジェリア民主人民共和国,dz,dza,012,ISO 3166-2:DZ
+American Samoa,米領サモア,as,asm,016,ISO 3166-2:AS
+Andorra,アンドラ公国,ad,and,020,ISO 3166-2:AD
+Angola,アンゴラ共和国,ao,ago,024,ISO 3166-2:AO
+Antigua and Barbuda,アンティグア・バーブーダ,ag,atg,028,ISO 3166-2:AG
+Azerbaijan,アゼルバイジャン共和国,az,aze,031,ISO 3166-2:AZ
+Argentina,アルゼンチン共和国,ar,arg,032,ISO 3166-2:AR
+Australia,オーストラリア連邦,au,aus,036,ISO 3166-2:AU
+Austria,オーストリア共和国,at,aut,040,ISO 3166-2:AT
+Bahamas,バハマ国,bs,bhs,044,ISO 3166-2:BS
+Bahrain,バーレーン王国,bh,bhr,048,ISO 3166-2:BH
+Bangladesh,バングラデシュ人民共和国,bd,bgd,050,ISO 3166-2:BD
+Armenia,アルメニア共和国,am,arm,051,ISO 3166-2:AM
+Barbados,バルバドス,bb,brb,052,ISO 3166-2:BB
+Belgium,ベルギー王国,be,bel,056,ISO 3166-2:BE
+Bermuda,バミューダ諸島,bm,bmu,060,ISO 3166-2:BM
+Bhutan,ブータン王国,bt,btn,064,ISO 3166-2:BT
+Bolivia,ボリビア多民族国,bo,bol,068,ISO 3166-2:BO
+Bosnia and Herzegovina,ボスニア・ヘルツェゴビナ,ba,bih,070,ISO 3166-2:BA
+Botswana,ボツワナ共和国,bw,bwa,072,ISO 3166-2:BW
+Bouvet Island,ブーベ島,bv,bvt,074,ISO 3166-2:BV
+Brazil,ブラジル連邦共和国,br,bra,076,ISO 3166-2:BR
+Belize,ベリーズ,bz,blz,084,ISO 3166-2:BZ
+British Indian Ocean Territory,英領インド洋地域,io,iot,086,ISO 3166-2:IO
+Solomon Islands,ソロモン諸島,sb,slb,090,ISO 3166-2:SB
+British Virgin Islands,英領バージン諸島,vg,vgb,092,ISO 3166-2:VG
+Brunei Darussalam,ブルネイ・ダルサラーム国,bn,brn,096,ISO 3166-2:BN
+Bulgaria,ブルガリア共和国,bg,bgr,100,ISO 3166-2:BG
+Myanmar,ミャンマー連邦,mm,mmr,104,ISO 3166-2:MM
+Burundi,ブルンジ共和国,bi,bdi,108,ISO 3166-2:BI
+Belarus,ベラルーシ共和国,by,blr,112,ISO 3166-2:BY
+Cambodia,カンボジア王国,kh,khm,116,ISO 3166-2:KH
+Cameroon,カメルーン共和国,cm,cmr,120,ISO 3166-2:CM
+Canada,カナダ,ca,can,124,ISO 3166-2:CA
+Cape Verde,カーボベルデ共和国,cv,cpv,132,ISO 3166-2:CV
+Cayman Islands,ケイマン諸島,ky,cym,136,ISO 3166-2:KY
+Central African Republic,中央アフリカ共和国,cf,caf,140,ISO 3166-2:CF
+Sri Lanka,スリランカ民主社会主義共和国,lk,lka,144,ISO 3166-2:LK
+Chad,チャド共和国,td,tcd,148,ISO 3166-2:TD
+Chile,チリ共和国,cl,chl,152,ISO 3166-2:CL
+China,中華人民共和国,cn,chn,156,ISO 3166-2:CN
+Taiwan,台湾,tw,twn,158,ISO 3166-2:TW
+Christmas Island,クリスマス島,cx,cxr,162,ISO 3166-2:CX
+Cocos (Keeling) Islands,ココス諸島,cc,cck,166,ISO 3166-2:CC
+Colombia,コロンビア共和国,co,col,170,ISO 3166-2:CO
+Comoros,コモロ連合,km,com,174,ISO 3166-2:KM
+Mayotte,マイヨット島,yt,myt,175,ISO 3166-2:YT
+Congo,コンゴ共和国,cg,cog,178,ISO 3166-2:CG
+Democratic Republic of the Congo,コンゴ民主共和国,cd,cod,180,ISO 3166-2:CD
+Cook Islands,クック諸島,ck,cok,184,ISO 3166-2:CK
+Costa Rica,コスタリカ共和国,cr,cri,188,ISO 3166-2:CR
+Croatia,クロアチア共和国,hr,hrv,191,ISO 3166-2:HR
+Cuba,キューバ共和国,cu,cub,192,ISO 3166-2:CU
+Cyprus,キプロス共和国,cy,cyp,196,ISO 3166-2:CY
+Czech Republic,チェコ共和国,cz,cze,203,ISO 3166-2:CZ
+Benin,ベナン共和国,bj,ben,204,ISO 3166-2:BJ
+Denmark,デンマーク王国,dk,dnk,208,ISO 3166-2:DK
+Dominica,ドミニカ国,dm,dma,212,ISO 3166-2:DM
+Dominican Republic,ドミニカ共和国,do,dom,214,ISO 3166-2:DO
+Ecuador,エクアドル共和国,ec,ecu,218,ISO 3166-2:EC
+El Salvador,エルサルバドル共和国,sv,slv,222,ISO 3166-2:SV
+Equatorial Guinea,赤道ギニア共和国,gq,gnq,226,ISO 3166-2:GQ
+Ethiopia,エチオピア連邦民主共和国,et,eth,231,ISO 3166-2:ET
+Eritrea,エリトリア国,er,eri,232,ISO 3166-2:ER
+Estonia,エストニア共和国,ee,est,233,ISO 3166-2:EE
+Faroe Islands,フェロー諸島,fo,fro,234,ISO 3166-2:FO
+Falkland Islands (Malvinas),フォークランド(マルビナス)諸島,fk,flk,238,ISO 3166-2:FK
+South Georgia and the South Sandwich Islands,南ジョージア島・南サンドイッチ諸島,gs,sgs,239,ISO 3166-2:GS
+Fiji,フィジー諸島共和国,fj,fji,242,ISO 3166-2:FJ
+Finland,フィンランド共和国,fi,fin,246,ISO 3166-2:FI
+Åland Islands,オーランド諸島,ax,ala,248,ISO 3166-2:AX
+France,フランス共和国,fr,fra,250,ISO 3166-2:FR
+French Guiana,フランス領ギアナ,gf,guf,254,ISO 3166-2:GF
+French Polynesia,フランス領ポリネシア,pf,pyf,258,ISO 3166-2:PF
+French Southern Territories,フランス領極南諸島,tf,atf,260,ISO 3166-2:TF
+Djibouti,ジブチ共和国,dj,dji,262,ISO 3166-2:DJ
+Gabon,ガボン共和国,ga,gab,266,ISO 3166-2:GA
+Georgia,グルジア,ge,geo,268,ISO 3166-2:GE
+Gambia,ガンビア共和国,gm,gmb,270,ISO 3166-2:GM
+Palestine,西岸・ガザ(パレスチナ自治区),ps,pse,275,ISO 3166-2:PS
+Germany,ドイツ連邦共和国,de,deu,276,ISO 3166-2:DE
+Ghana,ガーナ共和国,gh,gha,288,ISO 3166-2:GH
+Gibraltar,ジブラルタル,gi,gib,292,ISO 3166-2:GI
+Kiribati,キリバス共和国,ki,kir,296,ISO 3166-2:KI
+Greece,ギリシャ共和国,gr,grc,300,ISO 3166-2:GR
+Greenland,グリーンランド,gl,grl,304,ISO 3166-2:GL
+Grenada,グレナダ,gd,grd,308,ISO 3166-2:GD
+Guadeloupe,グアドループ島,gp,glp,312,ISO 3166-2:GP
+Guam,グアム,gu,gum,316,ISO 3166-2:GU
+Guatemala,グアテマラ共和国,gt,gtm,320,ISO 3166-2:GT
+Guinea,ギニア共和国,gn,gin,324,ISO 3166-2:GN
+Guyana,ガイアナ共和国,gy,guy,328,ISO 3166-2:GY
+Haiti,ハイチ共和国,ht,hti,332,ISO 3166-2:HT
+Heard Island and McDonald Islands,ハード島・マクドナルド諸島,hm,hmd,334,ISO 3166-2:HM
+Holy See (Vatican City State),バチカン市国,va,vat,336,ISO 3166-2:VA
+Honduras,ホンジュラス共和国,hn,hnd,340,ISO 3166-2:HN
+Hong Kong,ホンコン(香港)特別行政区,hk,hkg,344,ISO 3166-2:HK
+Hungary,ハンガリー共和国,hu,hun,348,ISO 3166-2:HU
+Iceland,アイスランド共和国,is,isl,352,ISO 3166-2:IS
+India,インド,in,ind,356,ISO 3166-2:IN
+Indonesia,インドネシア共和国,id,idn,360,ISO 3166-2:ID
+Iran,イラン・イスラム共和国,ir,irn,364,ISO 3166-2:IR
+Iraq,イラク共和国,iq,irq,368,ISO 3166-2:IQ
+Ireland,アイルランド,ie,irl,372,ISO 3166-2:IE
+Israel,イスラエル国,il,isr,376,ISO 3166-2:IL
+Italy,イタリア共和国,it,ita,380,ISO 3166-2:IT
+Côte d'Ivoire,コートジボワール共和国,ci,civ,384,ISO 3166-2:CI
+Jamaica,ジャマイカ,jm,jam,388,ISO 3166-2:JM
+Japan,日本国,jp,jpn,392,ISO 3166-2:JP
+Kazakhstan,カザフスタン共和国,kz,kaz,398,ISO 3166-2:KZ
+Jordan,ヨルダン・ハシミテ王国,jo,jor,400,ISO 3166-2:JO
+Kenya,ケニア共和国,ke,ken,404,ISO 3166-2:KE
+North Korea,朝鮮民主主義人民共和国,kp,prk,408,ISO 3166-2:KP
+South Korea,大韓民国,kr,kor,410,ISO 3166-2:KR
+Kuwait,クウェート国,kw,kwt,414,ISO 3166-2:KW
+Kyrgyzstan,キルギス共和国,kg,kgz,417,ISO 3166-2:KG
+Lao People's Democratic Republic,ラオス人民民主共和国,la,lao,418,ISO 3166-2:LA
+Lebanon,レバノン共和国,lb,lbn,422,ISO 3166-2:LB
+Lesotho,レソト王国,ls,lso,426,ISO 3166-2:LS
+Latvia,ラトビア共和国,lv,lva,428,ISO 3166-2:LV
+Liberia,リベリア共和国,lr,lbr,430,ISO 3166-2:LR
+Libya,リビア,ly,lby,434,ISO 3166-2:LY
+Liechtenstein,リヒテンシュタイン公国,li,lie,438,ISO 3166-2:LI
+Lithuania,リトアニア共和国,lt,ltu,440,ISO 3166-2:LT
+Luxembourg,ルクセンブルク大公国,lu,lux,442,ISO 3166-2:LU
+Macau,マカオ(澳門)特別行政区,mo,mac,446,ISO 3166-2:MO
+Madagascar,マダガスカル共和国,mg,mdg,450,ISO 3166-2:MG
+Malawi,マラウイ共和国,mw,mwi,454,ISO 3166-2:MW
+Malaysia,マレーシア,my,mys,458,ISO 3166-2:MY
+Maldives,モルディブ共和国,mv,mdv,462,ISO 3166-2:MV
+Mali,マリ共和国,ml,mli,466,ISO 3166-2:ML
+Malta,マルタ共和国,mt,mlt,470,ISO 3166-2:MT
+Martinique,マルチニーク島,mq,mtq,474,ISO 3166-2:MQ
+Mauritania,モーリタニア・イスラム共和国,mr,mrt,478,ISO 3166-2:MR
+Mauritius,モーリシャス共和国,mu,mus,480,ISO 3166-2:MU
+Mexico,メキシコ合衆国,mx,mex,484,ISO 3166-2:MX
+Monaco,モナコ公国,mc,mco,492,ISO 3166-2:MC
+Mongolia,モンゴル国,mn,mng,496,ISO 3166-2:MN
+Moldova,モルドバ共和国,md,mda,498,ISO 3166-2:MD
+Montenegro,モンテネグロ,me,mne,499,ISO 3166-2:ME
+Montserrat,モントセラト,ms,msr,500,ISO 3166-2:MS
+Morocco,モロッコ王国,ma,mar,504,ISO 3166-2:MA
+Mozambique,モザンビーク共和国,mz,moz,508,ISO 3166-2:MZ
+Oman,オマーン国,om,omn,512,ISO 3166-2:OM
+Namibia,ナミビア共和国,na,nam,516,ISO 3166-2:NA
+Nauru,ナウル共和国,nr,nru,520,ISO 3166-2:NR
+Nepal,ネパール連邦民主共和国,np,npl,524,ISO 3166-2:NP
+Netherlands,オランダ王国,nl,nld,528,ISO 3166-2:NL
+Curaçao,キュラソー,cw,cuw,531,ISO 3166-2:CW
+Aruba,アルバ,aw,abw,533,ISO 3166-2:AW
+Sint Maarten (Dutch part),シント・マールテン(オランダ領),sx,sxm,534,ISO 3166-2:SX
+Caribbean Netherlands,ボネール、シント・ユースタティウスおよびサバ,bq,bes,535,ISO 3166-2:BQ
+New Caledonia,ニューカレドニア,nc,ncl,540,ISO 3166-2:NC
+Vanuatu,バヌアツ共和国,vu,vut,548,ISO 3166-2:VU
+New Zealand,ニュージーランド,nz,nzl,554,ISO 3166-2:NZ
+Nicaragua,ニカラグア共和国,ni,nic,558,ISO 3166-2:NI
+Niger,ニジェール共和国,ne,ner,562,ISO 3166-2:NE
+Nigeria,ナイジェリア連邦共和国,ng,nga,566,ISO 3166-2:NG
+Niue,ニウエ,nu,niu,570,ISO 3166-2:NU
+Norfolk Island,ノーフォーク島,nf,nfk,574,ISO 3166-2:NF
+Norway,ノルウェー王国,no,nor,578,ISO 3166-2:NO
+Northern Mariana Islands,北マリアナ諸島,mp,mnp,580,ISO 3166-2:MP
+United States Minor Outlying Islands,米領小離島,um,umi,581,ISO 3166-2:UM
+Micronesia,ミクロネシア連邦,fm,fsm,583,ISO 3166-2:FM
+Marshall Islands,マーシャル諸島共和国,mh,mhl,584,ISO 3166-2:MH
+Palau,パラオ共和国,pw,plw,585,ISO 3166-2:PW
+Pakistan,パキスタン・イスラム共和国,pk,pak,586,ISO 3166-2:PK
+Panama,パナマ共和国,pa,pan,591,ISO 3166-2:PA
+Papua New Guinea,パプアニューギニア独立国,pg,png,598,ISO 3166-2:PG
+Paraguay,パラグアイ共和国,py,pry,600,ISO 3166-2:PY
+Peru,ペルー共和国,pe,per,604,ISO 3166-2:PE
+Philippines,フィリピン共和国,ph,phl,608,ISO 3166-2:PH
+Pitcairn,ピトケアン諸島,pn,pcn,612,ISO 3166-2:PN
+Poland,ポーランド共和国,pl,pol,616,ISO 3166-2:PL
+Portugal,ポルトガル共和国,pt,prt,620,ISO 3166-2:PT
+Guinea-Bissau,ギニアビサウ共和国,gw,gnb,624,ISO 3166-2:GW
+Timor-Leste,東ティモール民主共和国,tl,tls,626,ISO 3166-2:TL
+Puerto Rico,プエルトリコ,pr,pri,630,ISO 3166-2:PR
+Qatar,カタール国,qa,qat,634,ISO 3166-2:QA
+Réunion,レユニオン,re,reu,638,ISO 3166-2:RE
+Romania,ルーマニア,ro,rou,642,ISO 3166-2:RO
+Russian Federation,ロシア連邦,ru,rus,643,ISO 3166-2:RU
+Rwanda,ルワンダ共和国,rw,rwa,646,ISO 3166-2:RW
+Saint Barthélemy,サンバルテルミー,bl,blm,652,ISO 3166-2:BL
+Saint Helena,セントヘレナ・アセンション・トリスタンダクーニャ,sh,shn,654,ISO 3166-2:SH
+Saint Kitts and Nevis,セントキッツ・ネービス,kn,kna,659,ISO 3166-2:KN
+Anguilla,アンギラ,ai,aia,660,ISO 3166-2:AI
+Saint Lucia,セントルシア,lc,lca,662,ISO 3166-2:LC
+Saint Martin,サンマルタン,mf,maf,663,ISO 3166-2:MF
+Saint Pierre and Miquelon,サンピエール島・ミクロン島,pm,spm,666,ISO 3166-2:PM
+Saint Vincent and the Grenadines,セントビンセント・グレナディーン諸島,vc,vct,670,ISO 3166-2:VC
+San Marino,サンマリノ共和国,sm,smr,674,ISO 3166-2:SM
+Sao Tome and Principe,サントメ・プリンシペ民主共和国,st,stp,678,ISO 3166-2:ST
+Saudi Arabia,サウジアラビア王国,sa,sau,682,ISO 3166-2:SA
+Senegal,セネガル共和国,sn,sen,686,ISO 3166-2:SN
+Serbia,セルビア共和国,rs,srb,688,ISO 3166-2:RS
+Seychelles,セーシェル共和国,sc,syc,690,ISO 3166-2:SC
+Sierra Leone,シエラレオネ共和国,sl,sle,694,ISO 3166-2:SL
+Singapore,シンガポール共和国,sg,sgp,702,ISO 3166-2:SG
+Slovakia,スロバキア共和国,sk,svk,703,ISO 3166-2:SK
+Vietnam,ベトナム社会主義共和国,vn,vnm,704,ISO 3166-2:VN
+Slovenia,スロベニア共和国,si,svn,705,ISO 3166-2:SI
+Somalia,ソマリア民主共和国,so,som,706,ISO 3166-2:SO
+South Africa,南アフリカ共和国,za,zaf,710,ISO 3166-2:ZA
+Zimbabwe,ジンバブエ共和国,zw,zwe,716,ISO 3166-2:ZW
+Spain,スペイン,es,esp,724,ISO 3166-2:ES
+South Sudan,南スーダン,ss,ssd,728,ISO 3166-2:SS
+Western Sahara,西サハラ,eh,esh,732,ISO 3166-2:EH
+Sudan,スーダン共和国,sd,sdn,736,ISO 3166-2:SD
+Suriname,スリナム共和国,sr,sur,740,ISO 3166-2:SR
+Svalbard and Jan Mayen,スバールバル諸島・ヤンマイエン島,sj,sjm,744,ISO 3166-2:SJ
+Swaziland,スワジランド王国,sz,swz,748,ISO 3166-2:SZ
+Sweden,スウェーデン王国,se,swe,752,ISO 3166-2:SE
+Switzerland,スイス連邦,ch,che,756,ISO 3166-2:CH
+Syria,シリア・アラブ共和国,sy,syr,760,ISO 3166-2:SY
+Tajikistan,タジキスタン共和国,tj,tjk,762,ISO 3166-2:TJ
+Thailand,タイ王国,th,tha,764,ISO 3166-2:TH
+Togo,トーゴ共和国,tg,tgo,768,ISO 3166-2:TG
+Tokelau,トケラウ諸島,tk,tkl,772,ISO 3166-2:TK
+Tonga,トンガ王国,to,ton,776,ISO 3166-2:TO
+Trinidad and Tobago,トリニダード・トバゴ共和国,tt,tto,780,ISO 3166-2:TT
+United Arab Emirates,アラブ首長国連邦,ae,are,784,ISO 3166-2:AE
+Tunisia,チュニジア共和国,tn,tun,788,ISO 3166-2:TN
+Turkey,トルコ共和国,tr,tur,792,ISO 3166-2:TR
+Turkmenistan,トルクメニスタン,tm,tkm,795,ISO 3166-2:TM
+Turks and Caicos Islands,タークス・カイコス諸島,tc,tca,796,ISO 3166-2:TC
+Tuvalu,ツバル,tv,tuv,798,ISO 3166-2:TV
+Uganda,ウガンダ共和国,ug,uga,800,ISO 3166-2:UG
+Ukraine,ウクライナ,ua,ukr,804,ISO 3166-2:UA
+North Macedonia,マケドニア旧ユーゴスラビア共和国,mk,mkd,807,ISO 3166-2:MK
+Egypt,エジプト・アラブ共和国,eg,egy,818,ISO 3166-2:EG
+United Kingdom,グレートブリテン・北アイルランド連合王国(英国),gb,gbr,826,ISO 3166-2:GB
+Guernsey,ガーンジー島,gg,ggy,831,ISO 3166-2:GG
+Jersey,ジャージー島,je,jey,832,ISO 3166-2:JE
+Isle of Man,マン島,im,imn,833,ISO 3166-2:IM
+Tanzania,タンザニア連合共和国,tz,tza,834,ISO 3166-2:TZ
+United States,アメリカ合衆国,us,usa,840,ISO 3166-2:US
+U.S.,米領バージン諸島,vi,vir,850,ISO 3166-2:VI
+Burkina Faso,ブルキナファソ,bf,bfa,854,ISO 3166-2:BF
+Uruguay,ウルグアイ東方共和国,uy,ury,858,ISO 3166-2:UY
+Uzbekistan,ウズベキスタン共和国,uz,uzb,860,ISO 3166-2:UZ
+Venezuela,ベネズエラ・ボリバル共和国,ve,ven,862,ISO 3166-2:VE
+Wallis and Futuna,ワリス・フテュナ諸島,wf,wlf,876,ISO 3166-2:WF
+Samoa,サモア独立国,ws,wsm,882,ISO 3166-2:WS
+Yemen,イエメン共和国,ye,yem,887,ISO 3166-2:YE
+Zambia,ザンビア共和国,zm,zmb,894,ISO 3166-2:ZM
