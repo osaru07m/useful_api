@@ -18,67 +18,103 @@ jobs:
 
       - name: Setup GitHub CLI
         run: |
-          type -p gh || sudo apt install gh -y
+          gh --version || sudo apt install gh -y
 
+      #SECTION - CSV
+      #ANCHOR - ダウンロード
       - name: Download CSV
-        run: curl -o tmp_holidays_jis.csv https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv
+        run: curl -sSfL -o tmp_jp-holidays_jis.csv https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv
 
+      #ANCHOR - Shift-JIS から UTF-8 へ変換
       - name: Convert encoding
-        run: iconv -f SHIFT-JIS -t UTF-8 tmp_holidays_jis.csv -o tmp_holidays.csv
+        run: iconv -f SHIFT-JIS -t UTF-8 tmp_jp-holidays_jis.csv -o tmp_jp-holidays.csv
 
+      #ANCHOR - CSV 差分チェック
+      - name: Check diff (CSV)
+        run: |
+          if [ ! -f jp-holidays.csv ]; then
+            mv tmp_jp-holidays.csv jp-holidays.csv
+            echo "diff_csv=true" >> $GITHUB_ENV
+          elif ! diff -q tmp_jp-holidays.csv jp-holidays.csv > /dev/null; then
+            mv tmp_jp-holidays.csv jp-holidays.csv
+            echo "diff_csv=true" >> $GITHUB_ENV
+          else
+            echo "diff_csv=false" >> $GITHUB_ENV
+          fi
+      #!SECTION
+
+      #SECTION - JSON
+      #ANCHOR - CSV から JSON へ変換
       - name: Convert CSV to JSON
         run: |
           awk -F',' 'NR>1 {
             gsub("/", "-", $1);
+            gsub(/"/, "\\\"", $2);
             printf("{\"date\":\"%s\",\"name\":\"%s\"},\n", $1, $2);
-          }' tmp_holidays.csv | tr -d '\r' > body.json
+          }' tmp_jp-holidays.csv | tr -d '\r' > body.json
 
-          echo "[" > tmp_holidays.json
-          sed '$ s/,$//' body.json >> tmp_holidays.json
-          echo "]" >> tmp_holidays.json
+          echo "[" > tmp_jp-holidays.json
+          sed '$ s/,$//' body.json >> tmp_jp-holidays.json
+          echo "]" >> tmp_jp-holidays.json
 
-      - name: Check diff
+      #ANCHOR - JSON 差分チェック
+      - name: Check diff (JSON)
         run: |
-          if [ ! -f holidays.json ]; then
-            mv tmp_holidays.json holidays.json
-            echo "diff=true" >> $GITHUB_ENV
-          elif ! diff -q tmp_holidays.json holidays.json > /dev/null; then
-            mv tmp_holidays.json holidays.json
-            echo "diff=true" >> $GITHUB_ENV
+          if [ ! -f jp-holidays.json ]; then
+            mv tmp_jp-holidays.json jp-holidays.json
+            echo "diff_json=true" >> $GITHUB_ENV
+          elif ! diff -q tmp_jp-holidays.json jp-holidays.json > /dev/null; then
+            mv tmp_jp-holidays.json jp-holidays.json
+            echo "diff_json=true" >> $GITHUB_ENV
           else
-            echo "diff=false" >> $GITHUB_ENV
+            echo "diff_json=false" >> $GITHUB_ENV
           fi
+      #!SECTION
 
-      - name: Debug diff
-        run: echo "diff=${{ env.diff }}"
+      #SECTION - Pull Request
+      #DEBUG - 差分フラグ 確認用出力
+      - name: Debug (Diff flags output)
+        run: |
+          echo "diff_csv=${{ env.diff_csv }}"
+          echo "diff_json=${{ env.diff_json }}"
 
+      #ANCHOR - PR作成
+      #NOTE - env.diff_csv か env.diff_json が true の場合
       - name: Create PR
-        if: env.diff == 'true'
+        if: env.diff_csv == 'true' || env.diff_json == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
 
-          BRANCH_NAME="jp-holidays/json-update"
+          BRANCH_NAME="jp-holidays/update"
 
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
           git checkout -B $BRANCH_NAME
-          git add holidays.json
-          git commit -m "feat(jp-holidays): Update JSON file" || echo "No changes"
+          git add jp-holidays.csv jp-holidays.json
+          git commit -m "feat(jp-holidays): Update holiday data" || echo "No changes"
           git push origin $BRANCH_NAME --force
 
           if gh pr list --head $BRANCH_NAME --state open | grep -q .; then
             echo "PR already exists"
           else
             gh pr create \
-              --title "[jp-holidays] JSON更新" \
+              --title "[jp-holidays] データ更新" \
               --body "祝日データに差分があったため更新" \
               --base main \
               --head $BRANCH_NAME
           fi
 
+      #ANCHOR - スキップログ
+      #NOTE - env.diff_csv も env.diff_json も false の場合
       - name: Skip log
-        if: env.diff == 'false'
+        if: env.diff_csv != 'true' && env.diff_json != 'true'
         run: echo "No changes detected. Skipping PR."
+      #!SECTION
+
+      #ANCHOR - クリーンアップ
+      - name: Cleanup
+        if: always()
+        run: rm -f tmp_* body.json
